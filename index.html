@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Stress Test</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>
-    </title>
   </head>
   <body>
-
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Stress Test</h2>
+      </div>
+      <form id="stressTest">
+        <div class="form-group">
+          <p>In the past year, have you experienced any of the following? (Check all that apply):</p>
+          <input type="checkbox" name="warning-signs" value="sleep"> Loss of sleep.<br>
+          <input type="checkbox" name="warning-signs" value="overwhelm"> Feeling overwhelmed.<br>
+          <input type="checkbox" name="warning-signs" value="anxiety"> Feelings of anxiety/hopelesssness.<br>
+          <input type="checkbox" name="warning-signs" value="headaches"> Headaches.<br>
+          <input type="checkbox" name="warning-signs" value="appetite"> Loss of appetite.<br>
+        </div>
+        <div class="form-group">
+          <p>Please select all options applicable to you:</p>
+          <input type="checkbox" name="symptoms" value="pressure"> High blood pressure<br>
+          <input type="checkbox" name="symptoms" value="weight"> Severe weight loss/gain<br>
+          <input type="checkbox" name="symptoms" value="focus"> Trouble focusing<br>
+          <input type="checkbox" name="symptoms" value="depress"> Depression<br>
+        </div>
+        <div class="form-group">
+          <p>Have you recently participated in any of the following? (Check all that apply):</p>
+          <input type="checkbox" name="cope" value="meditate"> Meditation<br>
+          <input type="checkbox" name="cope" value="exercise"> Frequent exercise<br>
+          <input type="checkbox" name="cope" value="time"> Effective time-management<br>
+          <input type="checkbox" name="cope" value="pets"> Petting small, furry animals<br>
+        </div>
+       <button type="submit">Submit</button>
+      </form>
+      <div id="suggest">
+        <p>It seems like you're pretty stressed. Here are some resources that might help:</p>
+        <ul>
+          <li><a href="http://www.heart.org/HEARTORG/HealthyLiving/StressManagement/Stress-Management_UCM_001082_SubHomePage.jsp">American Heart Association</a></li>
+          <li><a href="https://www.helpguide.org/articles/stress/stress-management.htm">HelpGuide.Org</a></li>
+          <li><a href="https://www.mindtools.com/pages/article/managing-stress.htm">Managing Stress with Mind Tools!</a></li>
+        </ul>
+      </div>
+      <div id="goodJob">
+        <p>You may be a little stressed; but hey you're doing a pretty good job!</p>
+      </div>
+    </div>
   </body>
 </html>
